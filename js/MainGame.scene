@@ -1,0 +1,45 @@
+{
+            "id": "main-game-1",
+            "settings": {
+                "compilerOutputLanguage": "JAVA_SCRIPT",
+                "javaScriptInitFieldsInConstructor": true,
+                "javaScriptGenerateFieldDeclarations": true,
+                "createMethodName": "editorCreate",
+                "sceneKey": "MainGame",
+                "borderWidth": 1280,
+                "borderHeight": 720
+            },
+            "sceneType": "SCENE",
+            "displayList": [
+                {
+                    "type": "Rectangle",
+                    "id": "hud-bg",
+                    "label": "hudBg",
+                    "x": 640,
+                    "y": 30,
+                    "width": 1280,
+                    "height": 60,
+                    "isFilled": true,
+                    "fillColor": "#222222"
+                },
+                {
+                    "type": "Text",
+                    "id": "metric-support-text",
+                    "label": "publicSupportText",
+                    "x": 100,
+                    "y": 30,
+                    "originY": 0.5,
+                    "text": "Support: 0%",
+                    "fontFamily": "Arial",
+                    "fontSize": "18px",
+                    "color": "#ffffff"
+                }
+                // (Other metrics would go here, simplified for this first pass to ensure file format works)
+            ],
+            "meta": {
+                "app": "Phaser Editor 2D - Scene Editor",
+                "url": "https://phasereditor2d.com",
+                "contentType": "phasereditor2d.core.scene.SceneContentType",
+                "version": 5
+            }
+        }

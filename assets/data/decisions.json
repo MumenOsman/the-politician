@@ -1,0 +1,314 @@
+[
+  {
+    "id": "1",
+    "phase": "flashback",
+    "type": "morality",
+    "prompt": "CHILDHOOD: You see a local official taking a bribe. Your friend begs you to keep quiet.",
+    "audioIntro": "audio/SpeechAudio/Card1.mp3",
+    "introTranscript": "I remember being a kid, looking up at the adults running this town. Even back then... I grew up knowing the value of...",
+    "options": [
+      {
+        "text": "Help them (Loyalty)",
+        "audioResult": "audio/SpeechAudio/Card1-A.mp3",
+        "resultTranscript": "...loyalty. I learned early on that when the system is broken—and believe me, it was broken—you stick by your allies, no matter the cost.",
+        "audioBridge": "audio/SpeechAudio/Card1-Bridge.mp3",
+        "bridgeTranscript": "And those lessons stuck with me. God knows, it wasn't always easy. We didn't have much growing up.",
+        "effects": { "politicalFunding": 15, "wellBeing": 5, "selfEsteem": -10, "publicSupport": 0, "cityEconomy": 0 }
+      },
+      {
+        "text": "Refuse (Integrity)",
+        "audioResult": "audio/SpeechAudio/Card1-B.mp3",
+        "resultTranscript": "...integrity. I learned that there are no shortcuts to success in this life. There is only honest hard work, and earning your place.",
+        "audioBridge": "audio/SpeechAudio/Card1-Bridge.mp3",
+        "bridgeTranscript": "And those lessons stuck with me. God knows, it wasn't always easy. We didn't have much growing up.",
+        "effects": { "politicalFunding": -10, "wellBeing": -5, "selfEsteem": 10, "publicSupport": 5, "cityEconomy": 0 }
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "phase": "flashback",
+    "type": "survival",
+    "prompt": "UNIVERSITY: You find a lost wallet with $500 cash. You are broke and hungry.",
+    "audioIntro": "audio/SpeechAudio/Card2.mp3",
+    "introTranscript": "I remember my university days. Staring at empty pockets, wondering if I’d make rent. When I was a broke student, I learned that...",
+    "options": [
+      {
+        "text": "Keep it (Survival)",
+        "audioResult": "audio/SpeechAudio/Card2-A.mp3",
+        "resultTranscript": "...sometimes, in this harsh world, you have to do whatever it takes just to survive another day. You scrape, and you fight.",
+        "audioBridge": "audio/SpeechAudio/Card2-Bridge.mp3",
+        "bridgeTranscript": "That struggle made me hungry. It made me sharp. And when I finally entered the workforce, I saw how this city really runs behind closed doors.",
+        "effects": { "politicalFunding": 10, "wellBeing": 5, "selfEsteem": -15, "publicSupport": 0, "cityEconomy": 0 }
+      },
+      {
+        "text": "Return it (Character)",
+        "audioResult": "audio/SpeechAudio/Card2-B.mp3",
+        "resultTranscript": "...character isn't defined by what you do when the lights are on. It is defined by what you do when no one is watching.",
+        "audioBridge": "audio/SpeechAudio/Card2-Bridge.mp3",
+        "bridgeTranscript": "That struggle made me hungry. It made me sharp. And when I finally entered the workforce, I saw how this city really runs behind closed doors.",
+        "effects": { "politicalFunding": -5, "wellBeing": -10, "selfEsteem": 15, "publicSupport": 5, "cityEconomy": 0 }
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "phase": "flashback",
+    "type": "corporate",
+    "prompt": "FIRST JOB: Boss orders you to shred documents proving a safety violation.",
+    "audioIntro": "audio/SpeechAudio/Card3.mp3",
+    "introTranscript": "I got my first job at the firm. I saw the deals, the handshakes. In that job, I realized that...",
+    "options": [
+      {
+        "text": "Shred them (Obey)",
+        "audioResult": "audio/SpeechAudio/Card3-A.mp3",
+        "resultTranscript": "...keeping the economic engine moving requires tough choices. It requires unwavering loyalty to the mission, even when it's hard.",
+        "audioBridge": "audio/SpeechAudio/Card3-Bridge.mp3",
+        "bridgeTranscript": "But ambition... ambition has a price, doesn't it? We all pay it. I know I have.",
+        "effects": { "politicalFunding": 20, "wellBeing": -5, "selfEsteem": -10, "publicSupport": -5, "cityEconomy": 5 }
+      },
+      {
+        "text": "Leak them (Truth)",
+        "audioResult": "audio/SpeechAudio/Card3-B.mp3",
+        "resultTranscript": "...corporate greed is a cancer! And it must be challenged by those brave enough to speak the truth, no matter the risk!",
+        "audioBridge": "audio/SpeechAudio/Card3-Bridge.mp3",
+        "bridgeTranscript": "But ambition... ambition has a price, doesn't it? We all pay it. I know I have.",
+        "effects": { "politicalFunding": -20, "wellBeing": -5, "selfEsteem": 10, "publicSupport": 15, "cityEconomy": -5 }
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "phase": "flashback",
+    "type": "work_life",
+    "prompt": "FAMILY: It's your daughter's school play, but a key donor demands a dinner meeting.",
+    "audioIntro": "audio/SpeechAudio/Card4.mp3",
+    "introTranscript": "This journey hasn't been without loss. I look at my empty chair at the dinner table sometimes. I know the meaning of sacrifice because...",
+    "options": [
+      {
+        "text": "Go to Dinner (Ambition)",
+        "audioResult": "audio/SpeechAudio/Card4-A.mp3",
+        "resultTranscript": "...I have given my entire life—my time, my relationships, my blood and sweat—to serving this city's future. That is my vow to you.",
+        "audioBridge": "audio/SpeechAudio/Card4-Bridge.mp3",
+        "bridgeTranscript": "And we need that heart. Because we have faced dark times together. We have seen smoke rise over our skyline.",
+        "effects": { "politicalFunding": 25, "wellBeing": -20, "selfEsteem": -5, "publicSupport": 0, "cityEconomy": 0 }
+      },
+      {
+        "text": "Go to Play (Family)",
+        "audioResult": "audio/SpeechAudio/Card4-B.mp3",
+        "resultTranscript": "...at the end of the day, titles fade. But family? Family must always come first. That is the beating heart of our community.",
+        "audioBridge": "audio/SpeechAudio/Card4-Bridge.mp3",
+        "bridgeTranscript": "And we need that heart. Because we have faced dark times together. We have seen smoke rise over our skyline.",
+        "effects": { "politicalFunding": -15, "wellBeing": 20, "selfEsteem": 5, "publicSupport": 0, "cityEconomy": 0 }
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "phase": "flashback",
+    "type": "crisis",
+    "prompt": "RIOTS: Protesters block the highway. Police ask to clear them by force.",
+    "audioIntro": "audio/SpeechAudio/Card5.mp3",
+    "introTranscript": "When the riots shook our streets last year... when people were scared... I stood firmly for...",
+    "options": [
+      {
+        "text": "Authorize Force (Order)",
+        "audioResult": "audio/SpeechAudio/Card5-A.mp3",
+        "resultTranscript": "...law and order. Plain and simple. Without security, without stability, we have nothing but chaos.",
+        "audioBridge": "audio/SpeechAudio/Card5-Bridge.mp3",
+        "bridgeTranscript": "Exactly. And yet... my opponent calls me weak. They attack my character because they cannot attack my record.",
+        "effects": { "politicalFunding": 10, "wellBeing": 0, "selfEsteem": -5, "publicSupport": -15, "cityEconomy": 10 }
+      },
+      {
+        "text": "Join March (Justice)",
+        "audioResult": "audio/SpeechAudio/Card5-B.mp3",
+        "resultTranscript": "...the right of the people to be heard! You cannot have peace without justice, and silence is the enemy of progress.",
+        "audioBridge": "audio/SpeechAudio/Card5-Bridge.mp3",
+        "bridgeTranscript": "Exactly. And yet... my opponent calls me weak. They attack my character because they cannot attack my record.",
+        "effects": { "politicalFunding": -10, "wellBeing": 0, "selfEsteem": 5, "publicSupport": 15, "cityEconomy": -10 }
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "phase": "flashback",
+    "type": "strategy",
+    "prompt": "RIVAL: You find proof of your opponent's affair. Do you release it?",
+    "audioIntro": "audio/SpeechAudio/Card6.mp3",
+    "introTranscript": "They spread gossip. They play games. But I say to them...",
+    "options": [
+      {
+        "text": "Release it (Ruthless)",
+        "audioResult": "audio/SpeechAudio/Card6-A.mp3",
+        "resultTranscript": "...I am willing to fight dirty if that's what it takes to protect this city from your incompetence. I will do what is necessary.",
+        "audioBridge": "audio/SpeechAudio/Card6-Bridge.mp3",
+        "bridgeTranscript": "Let's talk about that vision. Look at our skyline today. Cranes, steel, glass. It is changing.",
+        "effects": { "politicalFunding": 5, "wellBeing": 0, "selfEsteem": -15, "publicSupport": 10, "cityEconomy": 0 }
+      },
+      {
+        "text": "Burn it (Honorable)",
+        "audioResult": "audio/SpeechAudio/Card6-B.mp3",
+        "resultTranscript": "...a leader should be judged on their policy and their vision! Not on gossip, not on slander, and not on cheap tricks.",
+        "audioBridge": "audio/SpeechAudio/Card6-Bridge.mp3",
+        "bridgeTranscript": "Let's talk about that vision. Look at our skyline today. Cranes, steel, glass. It is changing.",
+        "effects": { "politicalFunding": 0, "wellBeing": 5, "selfEsteem": 10, "publicSupport": -5, "cityEconomy": 0 }
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "phase": "flashback",
+    "type": "development",
+    "prompt": "DEAL: A developer wants to build a luxury hotel on the public park.",
+    "audioIntro": "audio/SpeechAudio/Card7.mp3",
+    "introTranscript": "Some say we are moving too fast. But I tell you, our city is growing because...",
+    "options": [
+      {
+        "text": "Approve Hotel (Growth)",
+        "audioResult": "audio/SpeechAudio/Card7-A.mp3",
+        "resultTranscript": "...we finally embraced business! We embraced innovation! We brought in the capital required to build a modern metropolis!",
+        "audioBridge": "audio/SpeechAudio/Card7-Bridge.mp3",
+        "bridgeTranscript": "But growth means nothing if we leave people behind when the storm comes. And the storms always come.",
+        "effects": { "politicalFunding": 30, "wellBeing": 0, "selfEsteem": -5, "publicSupport": -10, "cityEconomy": 15 }
+      },
+      {
+        "text": "Save Park (Preserve)",
+        "audioResult": "audio/SpeechAudio/Card7-B.mp3",
+        "resultTranscript": "...we decided that some things—our green spaces, our heritage—are more precious than profit. We are growing the right way.",
+        "audioBridge": "audio/SpeechAudio/Card7-Bridge.mp3",
+        "bridgeTranscript": "But growth means nothing if we leave people behind when the storm comes. And the storms always come.",
+        "effects": { "politicalFunding": -15, "wellBeing": 5, "selfEsteem": 5, "publicSupport": 10, "cityEconomy": -5 }
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "phase": "flashback",
+    "type": "disaster",
+    "prompt": "FLOOD: Boats are limited. Save the wealthy downtown or the poor suburbs?",
+    "audioIntro": "audio/SpeechAudio/Card8.mp3",
+    "introTranscript": "During the Great Flood... when the waters rose and the levees broke... I looked at our limited resources and realized...",
+    "options": [
+      {
+        "text": "Save Downtown (Economy)",
+        "audioResult": "audio/SpeechAudio/Card8-A.mp3",
+        "resultTranscript": "...we must protect our economic engine first. If the center falls, there will be no city left to save for anyone.",
+        "audioBridge": "audio/SpeechAudio/Card8-Bridge.mp3",
+        "bridgeTranscript": "It was a hard choice. Leadership is about hard choices. It's about standing up to everyone—even your own friends.",
+        "effects": { "politicalFunding": 15, "wellBeing": -5, "selfEsteem": -10, "publicSupport": -20, "cityEconomy": 20 }
+      },
+      {
+        "text": "Save Suburbs (People)",
+        "audioResult": "audio/SpeechAudio/Card8-B.mp3",
+        "resultTranscript": "...every single life matters equally! I don't care about your zip code, and I don't care about your bank account!",
+        "audioBridge": "audio/SpeechAudio/Card8-Bridge.mp3",
+        "bridgeTranscript": "It was a hard choice. Leadership is about hard choices. It's about standing up to everyone—even your own friends.",
+        "effects": { "politicalFunding": -10, "wellBeing": 0, "selfEsteem": 10, "publicSupport": 20, "cityEconomy": -15 }
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "phase": "flashback",
+    "type": "politics",
+    "prompt": "PARTY: The Party Leader orders you to vote for a bill you hate, or lose funding.",
+    "audioIntro": "audio/SpeechAudio/Card9.mp3",
+    "introTranscript": "The Party bosses... they told me to fall in line. They threatened to pull my funding. But regarding the party leadership, I have always believed that...",
+    "options": [
+      {
+        "text": "Obey (Unity)",
+        "audioResult": "audio/SpeechAudio/Card9-A.mp3",
+        "resultTranscript": "...unity is our greatest strength. A divided house cannot stand. We stick together, and we win together.",
+        "audioBridge": "audio/SpeechAudio/Card9-Bridge.mp3",
+        "bridgeTranscript": "Now... (Chuckles dryly)... I know there have been whispers. Rumors about my past.",
+        "effects": { "politicalFunding": 20, "wellBeing": -5, "selfEsteem": -15, "publicSupport": -5, "cityEconomy": 0 }
+      },
+      {
+        "text": "Rebel (Conscience)",
+        "audioResult": "audio/SpeechAudio/Card9-B.mp3",
+        "resultTranscript": "...a true leader must think for themselves! Even if it means standing alone. I answer to you, not to them.",
+        "audioBridge": "audio/SpeechAudio/Card9-Bridge.mp3",
+        "bridgeTranscript": "Now... (Chuckles dryly)... I know there have been whispers. Rumors about my past.",
+        "effects": { "politicalFunding": -25, "wellBeing": 5, "selfEsteem": 15, "publicSupport": 10, "cityEconomy": 0 }
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "phase": "flashback",
+    "type": "scandal",
+    "prompt": "RUMORS: A journalist asks about your arrest record from 20 years ago.",
+    "audioIntro": "audio/SpeechAudio/Card10.mp3",
+    "introTranscript": "I want to address them here, face to face. Regarding the rumors about my past...",
+    "options": [
+      {
+        "text": "Deny it (Lie)",
+        "audioResult": "audio/SpeechAudio/Card10-A.mp3",
+        "resultTranscript": "...let me be clear: they are nothing but baseless lies! They are designed to distract you from the real issues!",
+        "audioBridge": "audio/SpeechAudio/Card10-Bridge.mp3",
+        "bridgeTranscript": "We have to focus on the future. We have to balance the books. And that meant making the hardest cuts of all.",
+        "effects": { "politicalFunding": 5, "wellBeing": -5, "selfEsteem": -20, "publicSupport": 5, "cityEconomy": 0 }
+      },
+      {
+        "text": "Admit it (Truth)",
+        "audioResult": "audio/SpeechAudio/Card10-B.mp3",
+        "resultTranscript": "...I am human. I have made mistakes. But I have learned from them, and I have grown stronger because of them.",
+        "audioBridge": "audio/SpeechAudio/Card10-Bridge.mp3",
+        "bridgeTranscript": "We have to focus on the future. We have to balance the books. And that meant making the hardest cuts of all.",
+        "effects": { "politicalFunding": -5, "wellBeing": 0, "selfEsteem": 10, "publicSupport": -10, "cityEconomy": 0 }
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "phase": "flashback",
+    "type": "budget",
+    "prompt": "BUDGET: To avoid bankruptcy, you must cut one department.",
+    "audioIntro": "audio/SpeechAudio/Card11.mp3",
+    "introTranscript": "To balance this year's budget, we had to choose between our safety and our schools. We decided that...",
+    "options": [
+      {
+        "text": "Cut Schools (Safety)",
+        "audioResult": "audio/SpeechAudio/Card11-A.mp3",
+        "resultTranscript": "...safety is the prerequisite for learning. We cannot educate our children if they are not safe walking to school.",
+        "audioBridge": "audio/SpeechAudio/Card11-Bridge.mp3",
+        "bridgeTranscript": "So here we are. The sun is setting. The polls are about to open.",
+        "effects": { "politicalFunding": 0, "wellBeing": 0, "selfEsteem": -5, "publicSupport": -15, "cityEconomy": 15 }
+      },
+      {
+        "text": "Cut Police (Social)",
+        "audioResult": "audio/SpeechAudio/Card11-B.mp3",
+        "resultTranscript": "...books are more powerful than badges. If we want a better tomorrow, we invest in minds, not prisons.",
+        "audioBridge": "audio/SpeechAudio/Card11-Bridge.mp3",
+        "bridgeTranscript": "So here we are. The sun is setting. The polls are about to open.",
+        "effects": { "politicalFunding": -10, "wellBeing": 0, "selfEsteem": 0, "publicSupport": 10, "cityEconomy": -10 }
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "phase": "flashback",
+    "type": "final",
+    "prompt": "ELECTION DAY: You are backstage. Who are you really?",
+    "audioIntro": "audio/SpeechAudio/Card12.mp3",
+    "introTranscript": "When you walk into that booth tomorrow... when you pull that curtain closed... remember who I am. You are voting for...",
+    "options": [
+      {
+        "text": "The Winner (Ambition)",
+        "audioResult": "audio/SpeechAudio/Card12-A.mp3",
+        "resultTranscript": "...a winner! Someone who gets things done, no matter the odds, no matter the cost! Let's get to work!",
+        "audioBridge": null,
+        "bridgeTranscript": null,
+        "effects": { "politicalFunding": 20, "wellBeing": -10, "selfEsteem": -5, "publicSupport": 15, "cityEconomy": 0 }
+      },
+      {
+        "text": "The Servant (Humble)",
+        "audioResult": "audio/SpeechAudio/Card12-B.mp3",
+        "resultTranscript": "...a servant. Someone who listens. Someone who cares. Someone who is... just one of you. Thank you.",
+        "audioBridge": null,
+        "bridgeTranscript": null,
+        "effects": { "politicalFunding": -10, "wellBeing": 10, "selfEsteem": 10, "publicSupport": 10, "cityEconomy": 0 }
+      }
+    ]
+  }
+]

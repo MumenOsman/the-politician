@@ -1,0 +1,62 @@
+{
+            "id": "card-prefab-1",
+            "settings": {
+                "compilerOutputLanguage": "JAVA_SCRIPT",
+                "javaScriptInitFieldsInConstructor": true,
+                "javaScriptGenerateFieldDeclarations": true,
+                "createMethodName": "editorCreate",
+                "sceneKey": "CardPrefab",
+                "borderWidth": 1280,
+                "borderHeight": 720
+            },
+            "sceneType": "PREFAB",
+            "displayList": [
+                {
+                    "type": "Container",
+                    "id": "container-1",
+                    "label": "container_1",
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "bg-1",
+                            "label": "bg",
+                            "texture": { "key": "card_bg" },
+                            "y": -50
+                        },
+                        {
+                            "type": "Text",
+                            "id": "prompt-1",
+                            "label": "promptText",
+                            "y": -180,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "Prompt Text Goes Here",
+                            "fontFamily": "Arial",
+                            "fontSize": "24px",
+                            "color": "#ffffff",
+                            "align": "center",
+                            "wordWrapWidth": 500
+                        },
+                        {
+                            "type": "Text",
+                            "id": "id-1",
+                            "label": "idText",
+                            "y": -50,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "ID_001",
+                            "fontFamily": "Arial",
+                            "fontSize": "16px",
+                            "color": "#000000",
+                            "align": "center"
+                        }
+                    ]
+                }
+            ],
+            "meta": {
+                "app": "Phaser Editor 2D - Scene Editor",
+                "url": "https://phasereditor2d.com",
+                "contentType": "phasereditor2d.core.scene.SceneContentType",
+                "version": 5
+            }
+        }

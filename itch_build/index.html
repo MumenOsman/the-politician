@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Mamdani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        /* Reset CSS */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: #0d0d0d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'VT323', monospace;
+            overflow: hidden;
+        }
+
+        /* 1. THE TV SET */
+        #tv-set {
+            position: relative;
+            /* Aspect ratio + max-size ensures fitting */
+            aspect-ratio: 16/9;
+            /* WIDESCREEN */
+            height: 90vh;
+            /* Slightly smaller to fit width */
+            max-width: 95vw;
+
+            background-color: #8c7b64;
+            /* Beige/Brown */
+            border-radius: 40px;
+            padding: 40px;
+
+            /* 3D Casing Effect */
+            box-shadow:
+                inset 3px 3px 8px rgba(255, 255, 255, 0.2),
+                inset -10px -10px 20px rgba(0, 0, 0, 0.4),
+                0 0 50px rgba(0, 0, 0, 0.8),
+                0 0 0 10px #5c4e38;
+            /* Darker outer rim */
+
+            display: flex;
+            flex-direction: row;
+            /* Screen Left, Panel Right */
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 2. THE SCREEN (Glass) */
+        #screen {
+            position: relative;
+            /* occupy most of the space */
+            flex: 1;
+            height: 100%;
+            background: #000;
+            border-radius: 80px / 60px;
+            /* Wider curve */
+            overflow: hidden;
+            box-shadow:
+                inset 0 0 60px rgba(0, 0, 0, 0.9),
+                0 0 0 15px #1a1a1a;
+            /* Bezel */
+            margin-right: 40px;
+            border: 4px solid #111;
+        }
+
+        /* The Game Canvas - Fit inside */
+        #game-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Canvas Scaling fix: fit to container */
+        #game-container canvas {
+            width: 100% !important;
+            height: 100% !important;
+            border-radius: 60px;
+        }
+
+        /* 3. RIGHT CONTROL PANEL (V3) */
+        .control-panel {
+            width: 170px;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 10px;
+            background-color: #6d5e45;
+            border-radius: 15px;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+            gap: 10px;
+            /* Reduced gap to fit more */
+            font-family: 'VT323', monospace;
+        }
+
+        /* SIDE SCREENS */
+        .miniscreen {
+            width: 100%;
+            background-color: #000;
+            border-radius: 6px;
+            border: 3px solid #4a3b2a;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            text-align: center;
+        }
+
+        /* Chapter Screen */
+        .chapter-screen {
+            height: 60px;
+            /* Smaller */
+            background-color: #0f1a0f;
+            margin-bottom: 5px;
+        }
+
+        .chapter-text {
+            color: #33FF00;
+            font-size: 16px;
+            text-transform: uppercase;
+            line-height: 1.1;
+        }
+
+        /* Metric Screens */
+        .metric-screen {
+            height: 70px;
+            /* Fixed height for 4 metrics */
+            position: relative;
+        }
+
+        .metric-label {
+            color: #aaa;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .metric-value {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Settings Button */
+        #settings-btn {
+            margin-top: auto;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #d48e00 30%, #a66f00 100%);
+            border: 4px solid #5c3e00;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3e2b00;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Removed old graph styles */
+        /* .graph-screen, .graph-label, .graph-value, .graph-line, .graph-bar */
+
+        /* Removed old settings button active state */
+        /* #settings-btn:active */
+
+        /* 4. SCANLINES OVERLAY */
+        #screen::after {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 1000;
+            background-size: 100% 4px, 6px 100%;
+            pointer-events: none;
+            animation: flicker 0.15s infinite;
+            border-radius: 60px;
+            /* Match screen */
+        }
+
+        /* DECORATIONS */
+        .brand {
+            position: absolute;
+            bottom: 12px;
+            font-family: 'Arial', sans-serif;
+            font-weight: 900;
+            color: #B0B0B0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 1px 1px 1px #000, -1px -1px 1px #555;
+        }
+
+        .led {
+            position: absolute;
+            bottom: 15px;
+            right: 50px;
+            width: 12px;
+            height: 12px;
+            background-color: #ff3333;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        /* ANIMATIONS */
+        @keyframes turnOn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes flicker {
+            0% {
+                opacity: 0.92;
+            }
+
+            5% {
+                opacity: 0.95;
+            }
+
+            100% {
+                opacity: 0.92;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tv-set">
+        <div id="screen">
+            <div id="game-container"></div>
+        </div>
+
+        <div class="control-panel">
+            <!-- Chapter -->
+            <div class="miniscreen chapter-screen">
+                <div class="chapter-text">Chapter 1<br>THE RISE</div>
+            </div>
+
+            <!-- 1. Public Support -->
+            <div class="miniscreen metric-screen">
+                <div class="metric-value" id="val-support">20%</div>
+                <div class="metric-label">Public Support</div>
+            </div>
+
+            <!-- 2. Self-Esteem -->
+            <div class="miniscreen metric-screen">
+                <div class="metric-value" id="val-esteem">20%</div>
+                <div class="metric-label">Self-Esteem</div>
+            </div>
+
+            <!-- 3. Funding -->
+            <div class="miniscreen metric-screen">
+                <div class="metric-value" id="val-funding">$20</div>
+                <div class="metric-label">Political Funding</div>
+            </div>
+
+            <!-- 4. Economy -->
+            <div class="miniscreen metric-screen">
+                <div class="metric-value" id="val-economy">20%</div>
+                <div class="metric-label">City Economy</div>
+            </div>
+
+            <!-- Settings -->
+            <div id="settings-btn">Settings</div>
+        </div>
+        <div class="brand">PHASER-VISION</div>
+        <div class="led"></div>
+    </div>
+    <script src="./phaser.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
