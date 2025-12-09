@@ -50,4 +50,4 @@ Built with **Phaser 3** for the KoodHack25 game jam.
 *   **Genre**: Narrative Strategy
 
 ---
-*Project Mamdani - KoodHack25*
+KoodHack25*
