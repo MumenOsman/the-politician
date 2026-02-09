@@ -4,8 +4,6 @@
 
 **[Play on itch.io](https://mumenosman.itch.io/thepolitician)**
 
-![Title Screen](screenshots/title_screen.png)
-
 ## Overview
 
 **The Politician** is a retro-styled narrative strategy game where you step into the shoes of a candidate moments before the most important speech of your life. The city is divided, the polls are tied, and every word you choose will ripple through the fragile social fabric.
@@ -21,8 +19,6 @@ The game revolves around decision-making cards presented on a CRT TV interface. 
 *   **Political Funding**: The cash required to keep your campaign (and lifestyle) afloat.
 *   **City Economy**: The financial health of the city you aim to lead.
 
-![Gameplay - Intro](screenshots/gameplay_intro.png)
-
 ### Features
 
 *   **Typewriter Narrative**: Experience the tension as your speech is written in real-time.
@@ -30,8 +26,6 @@ The game revolves around decision-making cards presented on a CRT TV interface. 
 *   **Manage Self**: Spend political funding to improve your mental well-being through actions like "Family Time" or "Therapy".
 *   **Dynamic Audio**: Fully voiced intro and bridge sequences that react to your decisions.
 *   **Retro Aesthetic**: A polished CRT effect with scanlines, screen curvature, and retro typography.
-
-![Gameplay - Decision](screenshots/gameplay_decision.png)
 
 ## Controls
 
